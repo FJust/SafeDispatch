@@ -17,6 +17,9 @@ class ViewController: UIViewController {
             print("task \(Thread.current)")
         }
         
+        DispatchQueue.main.safeAsync { 
+            print("task \(Thread.current)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
